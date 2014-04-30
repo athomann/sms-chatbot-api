@@ -10,6 +10,7 @@ function init() {
   var phoneBot = new PhoneChatBot({
     username: '',
     password: '',
+    number: '',
     botuser: '',
     botpassword: ''
   });
@@ -25,6 +26,7 @@ var PhoneChatBot = function(options) {
   this.password = options.password;
   this.botuser = options.botuser;
   this.botpassword = options.botpassword;
+  this.number = options.number;
   this.data = '';
 };
 
